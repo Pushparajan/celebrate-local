@@ -1,0 +1,7 @@
+Content-Security-Policy:
+  default-src 'self';
+  script-src 'self' https://your-approved-tag-manager.example;
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' https: data:;
+  connect-src 'self' https://your-rum-endpoint.example;
+  frame-ancestors 'none';

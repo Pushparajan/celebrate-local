@@ -1,0 +1,3 @@
+.content-fragment-fields { margin: 0; }
+.content-fragment-fields dt { font-weight: 600; margin-top: var(--spacing-m); }
+.content-fragment-fields dd { margin: var(--spacing-xs) 0 0; }

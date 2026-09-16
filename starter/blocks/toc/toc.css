@@ -1,0 +1,9 @@
+.toc-list {
+  margin: 0;
+  padding-left: var(--spacing-m);
+}
+
+.toc-list li { margin-bottom: var(--spacing-xs); }
+.toc-list .toc-level-h3 { margin-left: var(--spacing-m); font-size: .9em; }
+.toc-list a { color: var(--color-brand-primary); text-decoration: none; }
+.toc-list a:hover { text-decoration: underline; }

@@ -1,0 +1,40 @@
+/* Design tokens — see docs/03-design-system-adapter.md. Sync from Style Dictionary if used. */
+:root {
+  --color-brand-primary: #0b5fff;
+  --color-brand-primary-contrast: #ffffff;
+  --color-text: #1d1d1d;
+  --color-background: #ffffff;
+  --color-border: #e0e0e0;
+
+  --font-family-heading: 'Adobe Clean', system-ui, sans-serif;
+  --font-family-body: 'Adobe Clean', system-ui, sans-serif;
+
+  --spacing-xs: 4px; --spacing-s: 8px; --spacing-m: 16px; --spacing-l: 32px; --spacing-xl: 64px;
+  --radius-s: 4px; --radius-m: 8px;
+  --shadow-card: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  color: var(--color-text);
+  background: var(--color-background);
+  opacity: 0; /* fades in once eager phase completes (see scripts.js .appear) */
+}
+
+body.appear { opacity: 1; transition: opacity .25s ease; }
+
+main { display: block; }
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-family-heading); }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.appear { transition: none; }
+}

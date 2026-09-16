@@ -1,0 +1,23 @@
+{
+  "name": "eds-launchpad-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . && stylelint '**/*.css'",
+    "lint:fix": "eslint . --fix && stylelint '**/*.css' --fix",
+    "test": "web-test-runner test/**/*.test.js --node-resolve",
+    "test:e2e": "playwright test",
+    "start": "aem up"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.0",
+    "@esm-bundle/chai": "^4.3.4",
+    "@playwright/test": "^1.45.0",
+    "@web/test-runner": "^0.18.2",
+    "eslint": "^8.57.0",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.0",
+    "@adobe/aem-cli": "^15.0.0"
+  }
+}

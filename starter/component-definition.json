@@ -1,0 +1,59 @@
+{
+  "groups": [
+    {
+      "title": "Text & Media",
+      "id": "text-media",
+      "components": [
+        { "title": "Title", "id": "title" },
+        { "title": "Image", "id": "image" },
+        { "title": "Image Compare", "id": "image-compare" },
+        { "title": "Embed", "id": "embed" },
+        { "title": "Download", "id": "download" },
+        { "title": "Button", "id": "button" },
+        { "title": "Separator", "id": "separator" }
+      ]
+    },
+    {
+      "title": "Layout & Containers",
+      "id": "layout",
+      "components": [
+        { "title": "Tabs", "id": "tabs" },
+        { "title": "Accordion", "id": "accordion" },
+        { "title": "Carousel", "id": "carousel" }
+      ]
+    },
+    {
+      "title": "Navigation",
+      "id": "navigation",
+      "components": [
+        { "title": "Breadcrumb", "id": "breadcrumb" },
+        { "title": "Navigation", "id": "nav" },
+        { "title": "Language Navigation", "id": "language-nav" },
+        { "title": "Table of Contents", "id": "toc" },
+        { "title": "Search", "id": "search" }
+      ]
+    },
+    {
+      "title": "Content & Composite",
+      "id": "content",
+      "components": [
+        { "title": "Teaser", "id": "teaser" },
+        { "title": "Cards", "id": "cards" },
+        { "title": "List", "id": "list" },
+        { "title": "Fragment", "id": "fragment" },
+        { "title": "Content Fragment", "id": "content-fragment" },
+        { "title": "Content Fragment List", "id": "content-fragment-list" },
+        { "title": "Hero", "id": "hero" }
+      ]
+    },
+    {
+      "title": "Interactive",
+      "id": "interactive",
+      "components": [
+        { "title": "Form", "id": "form" },
+        { "title": "Progress Bar", "id": "progress-bar" },
+        { "title": "Social Sharing", "id": "share" }
+      ]
+    }
+  ]
+}

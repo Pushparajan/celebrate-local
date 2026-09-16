@@ -1,0 +1,14 @@
+.image img, .image picture { max-width: 100%; height: auto; display: block; }
+
+.image figure { margin: 0; }
+
+.image figcaption {
+  font-size: .85rem;
+  color: var(--color-text);
+  opacity: .75;
+  margin-top: var(--spacing-xs);
+}
+
+.image.image-align-left { text-align: left; }
+.image.image-align-center { text-align: center; margin-inline: auto; }
+.image.image-align-right { text-align: right; margin-left: auto; }

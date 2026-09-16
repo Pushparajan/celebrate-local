@@ -1,0 +1,16 @@
+[
+  { "id": "section", "components": [
+    "title","text","image","image-compare","embed","download","button","separator",
+    "tabs","accordion","carousel",
+    "breadcrumb","nav","language-nav","toc","search",
+    "teaser","cards","list","fragment","content-fragment","content-fragment-list","hero",
+    "form","progress-bar","share"
+  ]},
+  { "id": "tabs", "components": ["text","image","button","cards"] },
+  { "id": "accordion", "components": ["text","image","button"] },
+  { "id": "carousel", "components": ["image","teaser"] },
+  { "id": "hero", "components": [] },
+  { "id": "teaser", "components": [] },
+  { "id": "cards", "components": [] },
+  { "id": "form", "components": [] }
+]

@@ -1,0 +1,99 @@
+[
+  { "id": "title", "fields": [
+    { "component": "text", "name": "eyebrow", "label": "Eyebrow (optional)" },
+    { "component": "text", "name": "heading", "label": "Heading", "required": true },
+    { "component": "select", "name": "level", "label": "Heading level", "options": ["h1","h2","h3","h4","h5","h6"] }
+  ]},
+  { "id": "image", "fields": [
+    { "component": "reference", "name": "image", "label": "Image", "required": true },
+    { "component": "text", "name": "alt", "label": "Alt text", "required": true },
+    { "component": "text", "name": "caption", "label": "Caption" },
+    { "component": "select", "name": "align", "label": "Alignment", "options": ["left","center","right"] }
+  ]},
+  { "id": "image-compare", "fields": [
+    { "component": "reference", "name": "before", "label": "Before image", "required": true },
+    { "component": "reference", "name": "after", "label": "After image", "required": true }
+  ]},
+  { "id": "embed", "fields": [
+    { "component": "text", "name": "url", "label": "Embed URL (YouTube, Vimeo, etc.)", "required": true }
+  ]},
+  { "id": "download", "fields": [
+    { "component": "reference", "name": "asset", "label": "File", "required": true },
+    { "component": "text", "name": "title", "label": "Display title" }
+  ]},
+  { "id": "button", "fields": [
+    { "component": "aem-content", "name": "link", "label": "Link", "required": true },
+    { "component": "text", "name": "label", "label": "Label", "required": true },
+    { "component": "select", "name": "style", "label": "Style", "options": ["primary","secondary","tertiary"] }
+  ]},
+  { "id": "separator", "fields": [] },
+  { "id": "tabs", "fields": [
+    { "component": "container", "name": "tabItems", "label": "Tabs", "collapsible": true }
+  ]},
+  { "id": "accordion", "fields": [
+    { "component": "container", "name": "accordionItems", "label": "Items", "collapsible": true }
+  ]},
+  { "id": "carousel", "fields": [
+    { "component": "container", "name": "slides", "label": "Slides", "collapsible": true }
+  ]},
+  { "id": "breadcrumb", "fields": [
+    { "component": "boolean", "name": "auto", "label": "Auto-generate from path", "value": true }
+  ]},
+  { "id": "nav", "fields": [
+    { "component": "container", "name": "navItems", "label": "Menu items", "collapsible": true }
+  ]},
+  { "id": "language-nav", "fields": [
+    { "component": "container", "name": "locales", "label": "Locales", "collapsible": true }
+  ]},
+  { "id": "toc", "fields": [
+    { "component": "text", "name": "levels", "label": "Heading levels (e.g. h2, h3)" }
+  ]},
+  { "id": "search", "fields": [
+    { "component": "text", "name": "placeholder", "label": "Placeholder text" }
+  ]},
+  { "id": "teaser", "fields": [
+    { "component": "reference", "name": "image", "label": "Image", "required": true },
+    { "component": "text", "name": "title", "label": "Title", "required": true },
+    { "component": "richtext", "name": "description", "label": "Description" },
+    { "component": "aem-content", "name": "ctaLink", "label": "CTA link" },
+    { "component": "text", "name": "ctaLabel", "label": "CTA label" }
+  ]},
+  { "id": "cards", "fields": [
+    { "component": "container", "name": "cardItems", "label": "Cards", "collapsible": true }
+  ]},
+  { "id": "list", "fields": [
+    { "component": "select", "name": "source", "label": "Source", "options": ["query","children","static"] },
+    { "component": "text", "name": "path", "label": "Path / index URL" },
+    { "component": "number", "name": "limit", "label": "Limit", "value": 10 }
+  ]},
+  { "id": "fragment", "fields": [
+    { "component": "aem-content", "name": "reference", "label": "Fragment page", "required": true }
+  ]},
+  { "id": "content-fragment", "fields": [
+    { "component": "text", "name": "endpoint", "label": "GraphQL / data endpoint", "required": true },
+    { "component": "text", "name": "model", "label": "Model / query name" },
+    { "component": "text", "name": "fields", "label": "Fields to render (comma-separated)" }
+  ]},
+  { "id": "content-fragment-list", "fields": [
+    { "component": "text", "name": "endpoint", "label": "GraphQL / data endpoint", "required": true },
+    { "component": "text", "name": "itemPath", "label": "Path to item array in response" },
+    { "component": "number", "name": "limit", "label": "Limit", "value": 10 }
+  ]},
+  { "id": "hero", "fields": [
+    { "component": "reference", "name": "image", "label": "Image", "required": true },
+    { "component": "text", "name": "imageAlt", "label": "Image alt text", "required": true },
+    { "component": "text", "name": "heading", "label": "Heading" },
+    { "component": "richtext", "name": "text", "label": "Body" }
+  ]},
+  { "id": "form", "fields": [
+    { "component": "container", "name": "fields", "label": "Form fields", "collapsible": true },
+    { "component": "text", "name": "endpoint", "label": "Submission endpoint", "required": true }
+  ]},
+  { "id": "progress-bar", "fields": [
+    { "component": "number", "name": "value", "label": "Value (0-100)", "required": true },
+    { "component": "text", "name": "label", "label": "Label" }
+  ]},
+  { "id": "share", "fields": [
+    { "component": "text", "name": "networks", "label": "Networks (comma-separated: linkedin,x,facebook,email,copy)" }
+  ]}
+]

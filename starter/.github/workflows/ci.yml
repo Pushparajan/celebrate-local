@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+
+  budget-gate:
+    runs-on: ubuntu-latest
+    needs: lint-and-test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for Helix preview
+        run: sleep 30
+      - name: Lighthouse CI (perf + a11y budgets — see docs/10, docs/09)
+        run: npx @lhci/cli@0.13.x autorun --config=lighthouserc.json
+        continue-on-error: false
+
+  e2e:
+    runs-on: ubuntu-latest
+    needs: budget-gate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npm run test:e2e

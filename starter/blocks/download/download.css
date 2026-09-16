@@ -1,0 +1,28 @@
+.download-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-m);
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-m);
+  padding: var(--spacing-m);
+  max-width: 420px;
+}
+
+.download-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-s);
+  background: var(--color-brand-primary);
+  color: var(--color-brand-primary-contrast);
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.download-meta { display: flex; flex-direction: column; gap: 2px; }
+.download-title { font-weight: 600; }
+.download-size { font-size: .8rem; opacity: .7; }

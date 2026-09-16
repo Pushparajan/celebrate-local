@@ -1,0 +1,32 @@
+.form-container {
+  display: grid;
+  gap: var(--spacing-m);
+  max-width: 480px;
+}
+
+.form-field { display: flex; flex-direction: column; gap: var(--spacing-xs); }
+.form-field-hidden { display: none; }
+
+.form-field label, .form-field legend { font-weight: 600; }
+
+.form-field input:not([type="checkbox"]):not([type="radio"]),
+.form-field select,
+.form-field textarea {
+  padding: var(--spacing-s);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  font: inherit;
+}
+
+.form-field-checkbox fieldset,
+.form-field-radio fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-field-checkbox label,
+.form-field-radio label { font-weight: 400; display: inline; margin-left: var(--spacing-xs); }

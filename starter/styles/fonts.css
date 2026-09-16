@@ -1,0 +1,6 @@
+/* Preload only the LCP-critical weight; keep other weights swap-loaded. See docs/10. */
+@font-face {
+  font-family: 'Adobe Clean';
+  src: local('Adobe Clean');
+  font-display: swap;
+}

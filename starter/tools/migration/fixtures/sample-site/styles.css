@@ -1,0 +1,8 @@
+:root { --brand: #0b5fff; }
+body { font-family: 'Acme Sans', sans-serif; color: #1d1d1d; }
+.btn-primary { background: #0b5fff; color: #ffffff; border-radius: 8px; }
+.feature-card { border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+h1 { font-family: 'Acme Display', serif; }
+.stats-row { display: flex; gap: 32px; }
+.stats-row .stat-number { font-size: 2.5rem; font-weight: 700; color: #0b5fff; }
+.stats-row .stat-label { font-size: 0.85rem; color: #6b6b6b; }

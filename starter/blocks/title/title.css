@@ -1,0 +1,12 @@
+.title .title-eyebrow {
+  margin: 0 0 var(--spacing-xs);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: .8rem;
+  color: var(--color-brand-primary);
+  font-weight: 600;
+}
+
+.title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
+  margin: 0;
+}

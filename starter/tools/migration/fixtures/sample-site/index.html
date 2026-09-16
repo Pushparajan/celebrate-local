@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head><title>Acme Corp — Home</title><meta name="description" content="Acme Corp homepage"></head>
+<body>
+<header>
+  <a href="/">Acme</a>
+  <nav><a href="/products">Products</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav>
+</header>
+<main>
+  <div class="hero-banner">
+    <picture><img src="/images/hero.jpg" alt="Team collaborating"></picture>
+    <h1>Build faster with Acme</h1>
+    <p>The platform teams rely on to ship product experiences at scale.</p>
+  </div>
+
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <a href="/">Home</a> <a href="/products">Products</a>
+  </nav>
+
+  <div class="feature-grid">
+    <div class="feature-card"><img src="/images/f1.jpg" alt="Speed"><h3>Speed</h3><p>Ship in minutes.</p><a href="/speed">Learn more</a></div>
+    <div class="feature-card"><img src="/images/f2.jpg" alt="Scale"><h3>Scale</h3><p>Grow without limits.</p><a href="/scale">Learn more</a></div>
+    <div class="feature-card"><img src="/images/f3.jpg" alt="Security"><h3>Security</h3><p>Enterprise-grade.</p><a href="/security">Learn more</a></div>
+  </div>
+
+  <div class="faq-section">
+    <details><summary>What is Acme?</summary><p>Acme is a platform for building fast websites.</p></details>
+    <details><summary>How much does it cost?</summary><p>Pricing scales with usage.</p></details>
+    <details><summary>Is there a free trial?</summary><p>Yes, 14 days free.</p></details>
+  </div>
+
+  <a href="/whitepaper.pdf" class="download-link">Download the whitepaper</a>
+
+  <div class="testimonial-teaser">
+    <img src="/images/customer.jpg" alt="Customer portrait">
+    <h2>Loved by developers</h2>
+    <p>"Acme cut our build time in half." — a happy customer</p>
+    <a href="/case-studies">Read the case study</a>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><span class="stat-number">500K</span><span class="stat-label">Developers</span></div>
+    <div class="stat"><span class="stat-number">99.99%</span><span class="stat-label">Uptime</span></div>
+  </div>
+
+  <a href="/signup" class="btn btn-primary">Get started</a>
+
+  <hr>
+
+  <ul class="related-links">
+    <li><a href="/docs">Documentation</a></li>
+    <li><a href="/api">API Reference</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/support">Support</a></li>
+  </ul>
+
+  <form action="/newsletter" method="post">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</main>
+<footer>
+  <a href="/privacy">Privacy</a> <a href="/terms">Terms</a>
+</footer>
+</body>
+</html>

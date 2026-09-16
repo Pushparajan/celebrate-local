@@ -1,0 +1,19 @@
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin: 0;
+  padding: 0;
+  font-size: .875rem;
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+  content: '/';
+  margin-left: var(--spacing-xs);
+  opacity: .5;
+}
+
+.breadcrumb-list a { color: var(--color-text); text-decoration: none; }
+.breadcrumb-list a:hover { text-decoration: underline; }
+.breadcrumb-list li[aria-current="page"] { font-weight: 600; }

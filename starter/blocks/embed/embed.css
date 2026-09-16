@@ -1,0 +1,31 @@
+.embed, .embed iframe, .embed-placeholder {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.embed-placeholder {
+  background: #000;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-m);
+}
+
+.embed-play {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-brand-primary);
+  cursor: pointer;
+}
+
+.embed-play::before {
+  content: '';
+  display: block;
+  margin-left: 4px;
+  border-style: solid;
+  border-width: 12px 0 12px 20px;
+  border-color: transparent transparent transparent var(--color-brand-primary-contrast);
+}
+
+.embed iframe { border: 0; border-radius: var(--radius-m); }
