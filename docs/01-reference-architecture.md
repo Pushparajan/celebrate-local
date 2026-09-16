@@ -41,7 +41,7 @@ Two supported multi-site strategies — pick one and document the choice:
 | **Core package + per-brand repos** (block library as npm/git-submodule dependency) | Multiple teams, different release cadence, brand-specific blocks needed. |
 
 ## Checklist
-- [ ] Decide content source (SharePoint / GDrive / da.live) — affects auth, Universal Editor config, content-model patterns.
+- [ ] Decide content source (SharePoint / GDrive / da.live) — affects auth, Universal Editor config, content-model patterns. See `starter/CONTENT-SOURCES.md` for step-by-step setup of each.
 - [ ] Decide single-site vs. multi-site topology above.
 - [ ] `fstab.yaml` mount points confirmed with content team.
 - [ ] Domain + CDN strategy (own Fastly config vs. default `.live` domain) decided.

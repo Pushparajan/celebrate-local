@@ -22,6 +22,7 @@ EDS Launchpad
 ├── docs/15-migration-utilities.md         Importer, redirects, parity checks
 │
 └── starter/                               Deployable starter repo (helix-project-boilerplate compatible)
+    ├── CONTENT-SOURCES.md                  Setup steps for SharePoint, Google Drive, and da.live
     ├── blocks/                             25 blocks — full AEM Core WCM Components equivalent (see docs/04)
     └── tools/
         ├── importer/                       Browser-based (Helix Import UI) single-page rules

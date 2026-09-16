@@ -1,0 +1,3 @@
+node_modules/
+starter/tools/migration/output/
+.DS_Store

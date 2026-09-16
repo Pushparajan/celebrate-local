@@ -1,2 +1,4 @@
 mountpoints:
-  /: https://<sharepoint-or-gdrive-or-da-live-url>/sites/<site>
+  /:
+    url: https://content.da.live/Pushparajan/celebrate-local/
+    type: markup
